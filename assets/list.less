@@ -1,0 +1,73 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 30px;
+    overflow: hidden;
+    overflow-y: auto;
+    // width: 100%;
+}
+
+#header,#center,#footer{
+    width: 25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// 适配
+
+// iphone5
+@media only screen and (max-width: 320px){
+    body,html{
+        width: 320px;
+        font-size: 12px;
+    }
+}
+
+// 手机
+@media only screen and (min-width: 321px){
+    body,html{
+        width: 480px;
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 480px){
+    body,html{
+        width: 480px;
+        font-size: 20px;
+    }
+}
+//平板 
+@media only screen and (min-width: 768px){
+    body,html{
+        width: 768px;
+        font-size: 30px;
+    }
+}
+
+// 默认
+@media only screen and (min-width: 980px){
+    body,html{
+        width: 980px;
+        font-size: 36px;
+    }
+}
+
+// pc
+@media only screen and (min-width: 1200px){
+    body,html{
+        width: 100%;
+        font-size: 40px;
+    }
+}
