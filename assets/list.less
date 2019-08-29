@@ -2,20 +2,58 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "microsoft yahei";
 }
 html,body{
     font-size: 30px;
     overflow: hidden;
     overflow-y: auto;
-    // width: 100%;
+    width: 100%;
+    background-color: #ddd;
+    // padding-left: 1rem;
+    // box-sizing: border-box;
 }
 
 #header,#center,#footer{
-    width: 25rem;
+    width: 100%;
+    margin: 0 1rem;
 }
 
 
-
+// 顶部样式
+#header{
+    margin-top: 2.6rem;
+    #title{
+        color:#223aee;
+        position: relative;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    #title:before{
+        content: attr(text);
+        position: absolute;
+        z-index: 10;
+        color:#f82a27;
+        -webkit-mask:linear-gradient(to left, #67a621, transparent );
+    }
+    #content{
+        padding: 0 1rem;
+        div{
+            margin: 0.5rem 0;
+            h4{
+                font-size: 0.8rem;
+            }
+            p{
+                color: #666;
+                margin: 0 0.8rem;
+            }
+            p:nth-child(3){
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
 
 
 
@@ -27,31 +65,49 @@ html,body{
 
 // 适配
 
-// iphone5
-@media only screen and (max-width: 320px){
+
+
+
+@media only screen and (min-width: 320px){
     body,html{
-        width: 320px;
-        font-size: 12px;
+        // width: 480px;
+        font-size: 12.8px;
     }
 }
-
-// 手机
-@media only screen and (min-width: 321px){
+@media only screen and (min-width: 360px){
     body,html{
-        width: 480px;
-        font-size: 20px;
+        // width: 480px;
+        font-size: 14.4px;
+    }
+}
+@media only screen and (min-width: 375px){
+    body,html{
+        // width: 480px;
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 390px){
+    body,html{
+        // width: 480px;
+        font-size: 15.6px;
+    }
+}
+@media only screen and (min-width: 414px){
+    body,html{
+        // width: 480px;
+        font-size: 16.56px;
     }
 }
 @media only screen and (min-width: 480px){
     body,html{
-        width: 480px;
-        font-size: 20px;
+        // width: 480px;
+        font-size: 19.2px;
     }
 }
 //平板 
 @media only screen and (min-width: 768px){
     body,html{
-        width: 768px;
+        // width: 768px;
         font-size: 30px;
     }
 }
@@ -59,7 +115,7 @@ html,body{
 // 默认
 @media only screen and (min-width: 980px){
     body,html{
-        width: 980px;
+        // width: 980px;
         font-size: 36px;
     }
 }
@@ -67,7 +123,7 @@ html,body{
 // pc
 @media only screen and (min-width: 1200px){
     body,html{
-        width: 100%;
+        // width: 100%;
         font-size: 40px;
     }
 }

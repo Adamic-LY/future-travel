@@ -7,11 +7,12 @@ body {
   font-size: 30px;
   overflow: hidden;
   overflow-y: auto;
+  width: 100%;
 }
 #header,
 #center,
 #footer {
-  width: 25rem;
+  width: 100%;
 }
 #header {
   width: 25rem;
@@ -44,14 +45,17 @@ body {
   font-size: 0.7rem;
 }
 #header #title #info {
-  width: 11rem;
+  width: 15rem;
   height: 2rem;
-  margin-left: 7rem;
+  margin-left: 6rem;
   margin-top: 1rem;
+  box-sizing: border-box;
 }
 #header #title #info div {
   height: 2rem;
   float: left;
+  padding-right: 1.4rem;
+  border-right: 1px solid #000;
 }
 #header #title #info div span {
   display: block;
@@ -62,9 +66,9 @@ body {
   font-size: 0.8rem;
 }
 #header #title #info div:last-child {
-  float: right;
-  padding-left: 1.4rem;
-  border-left: 1px solid #000;
+  margin-left: 1.4rem;
+  padding-right: 0;
+  border-right: none;
 }
 #center {
   width: 25rem;
@@ -74,18 +78,8 @@ body {
 }
 #center div {
   float: left;
-  width: 7.4rem;
-  height: 7.4rem;
-  /* span:nth-child(2n+1){
-            width: 3rem;
-            height: 3rem;
-            // position: absolute;
-            // top: 0;
-            // left: 0;
-            // right: 0;
-            // bottom: 0;
-            // margin: auto;
-        } */
+  width: 7rem;
+  height: 7rem;
 }
 #center div span {
   display: block;
@@ -123,7 +117,7 @@ body {
   left: 8rem;
   top: 0.65rem;
   width: 1.3rem;
-  height: 2px;
+  height: 1px;
   background-color: #000;
 }
 #footer i:nth-child(3) {
@@ -131,11 +125,10 @@ body {
 }
 #footer h4 {
   text-align: center;
-  padding: 0 1rem;
 }
 #footer #content {
   margin-top: 1rem;
-  padding-left: 4.5rem;
+  padding-left: 3rem;
 }
 #footer #content div {
   float: left;
@@ -152,61 +145,57 @@ body {
 #footer #content div:nth-child(2) {
   margin-left: 3rem;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) {
   body,
   html {
-    width: 320px;
-    font-size: 12px;
-  }
-  #header #title #info {
-    width: 12rem;
-  }
-  #header #title #info div {
-    padding-left: 0;
-    box-sizing: border-box;
-  }
-  #header #title #info div span {
-    font-size: 8px;
-  }
-  #header #title #info div span:first-child {
-    font-size: 12px;
-  }
-  #header #title #info #r_info {
-    padding-left: 15px;
+    font-size: 12.8px;
   }
 }
-@media only screen and (min-width: 321px) {
+@media only screen and (min-width: 360px) {
   body,
   html {
-    width: 480px;
-    font-size: 20px;
+    font-size: 14.4px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  body,
+  html {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 390px) {
+  body,
+  html {
+    font-size: 15.6px;
+  }
+}
+@media only screen and (min-width: 414px) {
+  body,
+  html {
+    font-size: 16.56px;
   }
 }
 @media only screen and (min-width: 480px) {
   body,
   html {
-    width: 480px;
-    font-size: 20px;
+    font-size: 19.2px;
   }
 }
 @media only screen and (min-width: 768px) {
   body,
   html {
-    width: 768px;
     font-size: 30px;
   }
 }
 @media only screen and (min-width: 980px) {
   body,
   html {
-    width: 980px;
     font-size: 36px;
   }
 }
 @media only screen and (min-width: 1200px) {
   body,
   html {
-    width: 100%;
     font-size: 40px;
   }
 }
