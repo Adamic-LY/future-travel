@@ -20,6 +20,7 @@ body {
   background-image: url(image/bg.png);
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 #header {
   width: 25rem;
