@@ -7,6 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>大会议程</title>
     <link rel="stylesheet" href="./assets/list.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <style>
+        .show {
+            display: block;
+        }
+        
+        .hide {
+            display: none;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -38,10 +50,10 @@
         </div>
     </div>
     <div id="center">
-        <div id="date25">
+        <div id="date25" class="show">
             <div class="tab">
                 <div class="l_tab">10月25日</div>
-                <div class="r_tab">10月26日</div>
+                <div class="r_tab" id="tab26">10月26日</div>
             </div>
             <div class="morning">
                 <div>
@@ -83,10 +95,10 @@
                 </div>
             </div>
         </div>
-        <div id="date26">
+        <div id="date26" class="hide">
             <div class="tab">
-                <div class="l_tab">10月25日</div>
-                <div class="r_tab">10月26日</div>
+                <div class="l_tab" id="tab25" style="background-color: #d2d2d2">10月25日</div>
+                <div class="r_tab" style="background-color: #5779b0">10月26日</div>
             </div>
             <div class="morning">
                 <div>
@@ -216,5 +228,29 @@
         </div>
     </div>
 </body>
+
+<script>
+    var $tab25 = $('#tab25');
+    var $tab26 = $('#tab26');
+    var $date25 = $('#date25');
+    var $date26 = $('#date26');
+    $tab26.on('click', function() {
+        $date25.addClass('hide').removeClass('show')
+        $date26.removeClass('hide').addClass('show')
+    })
+    $tab25.on('click', function() {
+        $date26.addClass('hide').removeClass('show')
+        $date25.removeClass('hide').addClass('show')
+    })
+
+    /*  $tab25.on('click', function() {
+         $date26.style = "display :none";
+         $date25.style = "display:  block";
+     })
+     $tab26.on('click', function() {
+         $date25.style = "display :none";
+         $date26.style = "display:  block";
+     }) */
+</script>
 
 </html>
