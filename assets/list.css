@@ -10,7 +10,7 @@ body {
   overflow: hidden;
   overflow-y: auto;
   width: 100%;
-  background-color: #ddd;
+  background-color: #eee;
 }
 #header,
 #center,
@@ -27,7 +27,7 @@ p {
   margin-bottom: 0.3rem;
 }
 #header {
-  margin-top: 2.6rem;
+  padding-top: 2.6rem;
   padding-bottom: 2rem;
 }
 #header #title {
