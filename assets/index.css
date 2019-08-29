@@ -16,7 +16,6 @@ body {
   width: 100%;
 }
 body {
-  padding: 0 1rem;
   background-image: url(image/bg.png);
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -38,7 +37,7 @@ body {
 }
 #header #logo img {
   display: block;
-  width: 8rem;
+  width: 10rem;
 }
 #header #title {
   padding-top: 6.5rem;
@@ -55,7 +54,7 @@ body {
 #header #title #info {
   width: 15rem;
   height: 2rem;
-  margin-left: 6rem;
+  margin-left: 5rem;
   margin-top: 1rem;
   box-sizing: border-box;
 }
@@ -135,6 +134,7 @@ body {
 }
 #footer h4 {
   text-align: center;
+  margin-left: -1rem;
 }
 #footer #content {
   margin-top: 1rem;
