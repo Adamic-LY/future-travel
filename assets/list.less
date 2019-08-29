@@ -19,12 +19,13 @@ html,body{
 }
 
 h4{
-    font-weight: normal;
+    font-weight: 400;
     margin-bottom: 0.3rem;
 }
 
 p{
     font-weight: 100;
+    line-height: 1.5rem;
     margin-bottom: 0.3rem;
 }
 
@@ -67,7 +68,7 @@ p{
 
 #center{
     // padding: 0 1rem;
-    #tab{
+    .tab{
         height: 2.7rem;
         div{
             width: 11.5rem;
@@ -78,17 +79,33 @@ p{
             color: #ffffff;
             background-color: #5779b0;
         }
-        #r_tab{
+        .r_tab{
             // float: right;
             background-color: #d2d2d2;
         }
     }
-    #morning,#afternoon,#host{
-        padding: 1.3rem 1rem;
-        border-bottom: 1px solid #ccc;
+    #date26{
+        .tab{
+            .l_tab{
+                background-color: #d2d2d2;
+            }
+            .r_tab{
+                background-color: #5779b0;
+            }
+        }
     }
-    #morning>div,#afternoon>div{
+    #host{
+        padding: 1.3rem 1rem;       
+    }
+    .morning>div>div,.afternoon>div>div{
         margin-bottom: 1rem;
+    }
+    .morning>div>div:last-child,.afternoon>div>div:last-child{
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 1rem;
+    }
+    .morning>div:first-child,.afternoon>div:first-child{
+        padding-top: 1rem;
     }
     #host{
         padding-bottom: 15rem;

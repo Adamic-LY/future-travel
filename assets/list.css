@@ -19,11 +19,12 @@ body {
   margin: 0 1rem;
 }
 h4 {
-  font-weight: normal;
+  font-weight: 400;
   margin-bottom: 0.3rem;
 }
 p {
   font-weight: 100;
+  line-height: 1.5rem;
   margin-bottom: 0.3rem;
 }
 #header {
@@ -58,10 +59,10 @@ p {
 #header #content div p:nth-child(3) {
   margin-top: 0.5rem;
 }
-#center #tab {
+#center .tab {
   height: 2.7rem;
 }
-#center #tab div {
+#center .tab div {
   width: 11.5rem;
   height: 100%;
   line-height: 2.7rem;
@@ -70,18 +71,30 @@ p {
   color: #ffffff;
   background-color: #5779b0;
 }
-#center #tab #r_tab {
+#center .tab .r_tab {
   background-color: #d2d2d2;
 }
-#center #morning,
-#center #afternoon,
+#center #date26 .tab .l_tab {
+  background-color: #d2d2d2;
+}
+#center #date26 .tab .r_tab {
+  background-color: #5779b0;
+}
 #center #host {
   padding: 1.3rem 1rem;
-  border-bottom: 1px solid #ccc;
 }
-#center #morning > div,
-#center #afternoon > div {
+#center .morning > div > div,
+#center .afternoon > div > div {
   margin-bottom: 1rem;
+}
+#center .morning > div > div:last-child,
+#center .afternoon > div > div:last-child {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+#center .morning > div:first-child,
+#center .afternoon > div:first-child {
+  padding-top: 1rem;
 }
 #center #host {
   padding-bottom: 15rem;
