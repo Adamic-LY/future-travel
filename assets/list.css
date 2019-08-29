@@ -15,11 +15,20 @@ body {
 #header,
 #center,
 #footer {
-  width: 100%;
+  background-color: #fff;
   margin: 0 1rem;
+}
+h4 {
+  font-weight: normal;
+  margin-bottom: 0.3rem;
+}
+p {
+  font-weight: 100;
+  margin-bottom: 0.3rem;
 }
 #header {
   margin-top: 2.6rem;
+  padding-bottom: 2rem;
 }
 #header #title {
   color: #223aee;
@@ -44,11 +53,48 @@ body {
   font-size: 0.8rem;
 }
 #header #content div p {
-  color: #666;
   margin: 0 0.8rem;
 }
 #header #content div p:nth-child(3) {
   margin-top: 0.5rem;
+}
+#center #tab {
+  height: 2.7rem;
+}
+#center #tab div {
+  width: 11.5rem;
+  height: 100%;
+  line-height: 2.7rem;
+  float: left;
+  text-align: center;
+  color: #ffffff;
+  background-color: #5779b0;
+}
+#center #tab #r_tab {
+  background-color: #d2d2d2;
+}
+#center #morning,
+#center #afternoon,
+#center #host {
+  padding: 1.3rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+#center #morning > div,
+#center #afternoon > div {
+  margin-bottom: 1rem;
+}
+#center #host {
+  padding-bottom: 15rem;
+}
+#center #host #hostName,
+#center #host #hostTitle {
+  float: left;
+}
+#center #host #hostName span,
+#center #host #hostTitle span {
+  display: block;
+  font-size: 0.65rem;
+  color: #666;
 }
 @media only screen and (min-width: 320px) {
   body,
@@ -61,11 +107,23 @@ body {
   html {
     font-size: 14.4px;
   }
+  body #center #host #hostName,
+  html #center #host #hostName,
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    margin-bottom: 0.5rem;
+  }
 }
 @media only screen and (min-width: 375px) {
   body,
   html {
     font-size: 15px;
+  }
+  body #center #host #hostName,
+  html #center #host #hostName,
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    margin-bottom: 0.5rem;
   }
 }
 @media only screen and (min-width: 390px) {
@@ -73,11 +131,23 @@ body {
   html {
     font-size: 15.6px;
   }
+  body #center #host #hostName,
+  html #center #host #hostName,
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    margin-bottom: 0.5rem;
+  }
 }
 @media only screen and (min-width: 414px) {
   body,
   html {
     font-size: 16.56px;
+  }
+  body #center #host #hostName,
+  html #center #host #hostName,
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    margin-bottom: 0.5rem;
   }
 }
 @media only screen and (min-width: 480px) {
@@ -85,17 +155,55 @@ body {
   html {
     font-size: 19.2px;
   }
+  body #center #host #hostName,
+  html #center #host #hostName,
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    margin-bottom: 0.5rem;
+  }
 }
 @media only screen and (min-width: 768px) {
   body,
   html {
     font-size: 30px;
   }
+  body #center #host #hostName,
+  html #center #host #hostName,
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    margin-bottom: 0.5rem;
+  }
+  body #center #host #hostName span,
+  html #center #host #hostName span,
+  body #center #host #hostTitle span,
+  html #center #host #hostTitle span {
+    font-size: 20px;
+  }
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    float: right;
+  }
 }
 @media only screen and (min-width: 980px) {
   body,
   html {
     font-size: 36px;
+  }
+  body #center #host #hostName,
+  html #center #host #hostName,
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    margin-bottom: 0.5rem;
+  }
+  body #center #host #hostName span,
+  html #center #host #hostName span,
+  body #center #host #hostTitle span,
+  html #center #host #hostTitle span {
+    font-size: 26px;
+  }
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    float: right;
   }
 }
 @media only screen and (min-width: 1200px) {

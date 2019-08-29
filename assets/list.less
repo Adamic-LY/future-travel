@@ -11,19 +11,28 @@ html,body{
     overflow-y: auto;
     width: 100%;
     background-color: #ddd;
-    // padding-left: 1rem;
-    // box-sizing: border-box;
 }
 
 #header,#center,#footer{
-    width: 100%;
+    background-color: #fff;
     margin: 0 1rem;
+}
+
+h4{
+    font-weight: normal;
+    margin-bottom: 0.3rem;
+}
+
+p{
+    font-weight: 100;
+    margin-bottom: 0.3rem;
 }
 
 
 // 顶部样式
 #header{
     margin-top: 2.6rem;
+    padding-bottom: 2rem;
     #title{
         color:#223aee;
         position: relative;
@@ -45,7 +54,7 @@ html,body{
                 font-size: 0.8rem;
             }
             p{
-                color: #666;
+                // color: #666;
                 margin: 0 0.8rem;
             }
             p:nth-child(3){
@@ -56,7 +65,43 @@ html,body{
 }
 
 
-
+#center{
+    // padding: 0 1rem;
+    #tab{
+        height: 2.7rem;
+        div{
+            width: 11.5rem;
+            height: 100%;
+            line-height: 2.7rem;
+            float: left;
+            text-align: center;
+            color: #ffffff;
+            background-color: #5779b0;
+        }
+        #r_tab{
+            // float: right;
+            background-color: #d2d2d2;
+        }
+    }
+    #morning,#afternoon,#host{
+        padding: 1.3rem 1rem;
+        border-bottom: 1px solid #ccc;
+    }
+    #morning>div,#afternoon>div{
+        margin-bottom: 1rem;
+    }
+    #host{
+        padding-bottom: 15rem;
+        #hostName,#hostTitle{
+            float: left;
+            span{
+                display: block;
+                font-size: 0.65rem;
+                color: #666;
+            }
+        }
+    }
+}
 
 
 
@@ -70,60 +115,112 @@ html,body{
 
 @media only screen and (min-width: 320px){
     body,html{
-        // width: 480px;
         font-size: 12.8px;
     }
 }
 @media only screen and (min-width: 360px){
     body,html{
-        // width: 480px;
         font-size: 14.4px;
+        #center{
+            #host{
+                #hostName,#hostTitle{
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
     }
 }
 @media only screen and (min-width: 375px){
     body,html{
-        // width: 480px;
         font-size: 15px;
+        #center{
+            #host{
+                #hostName,#hostTitle{
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
     }
 }
 @media only screen and (min-width: 390px){
     body,html{
-        // width: 480px;
         font-size: 15.6px;
+        #center{
+            #host{
+                #hostName,#hostTitle{
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
     }
 }
 @media only screen and (min-width: 414px){
     body,html{
-        // width: 480px;
         font-size: 16.56px;
+        #center{
+            #host{
+                #hostName,#hostTitle{
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
     }
 }
 @media only screen and (min-width: 480px){
     body,html{
-        // width: 480px;
         font-size: 19.2px;
+        #center{
+            #host{
+                #hostName,#hostTitle{
+                    margin-bottom: 0.5rem;   
+                }
+            }
+        }
     }
 }
 //平板 
 @media only screen and (min-width: 768px){
     body,html{
-        // width: 768px;
         font-size: 30px;
+        #center{
+            #host{
+                #hostName,#hostTitle{
+                    margin-bottom: 0.5rem;   
+                    span{
+                        font-size: 20px;
+                    }
+                }
+                #hostTitle{
+                    float: right;
+                }
+            }
+        }
     }
 }
 
 // 默认
 @media only screen and (min-width: 980px){
     body,html{
-        // width: 980px;
         font-size: 36px;
+        #center{
+            #host{
+                #hostName,#hostTitle{
+                    margin-bottom: 0.5rem;   
+                    span{
+                        font-size: 26px;
+                    }
+                }
+                #hostTitle{
+                    float: right;
+                }
+            }
+        }
     }
 }
 
 // pc
 @media only screen and (min-width: 1200px){
     body,html{
-        // width: 100%;
         font-size: 40px;
     }
 }
