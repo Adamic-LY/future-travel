@@ -3,10 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "microsoft yahei";
+  font-size: 0.8rem;
 }
 html,
 body {
-  font-size: 30px;
   overflow: hidden;
   overflow-y: auto;
   width: 100%;
@@ -19,17 +19,17 @@ body {
   margin: 0 1rem;
 }
 h4 {
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 0.3rem;
+  color: #333;
 }
 p {
-  font-weight: 100;
   line-height: 1.5rem;
   margin-bottom: 0.3rem;
+  color: #969696;
 }
 #header {
   padding-top: 2.6rem;
-  padding-bottom: 2rem;
 }
 #header #title {
   color: #223aee;
@@ -41,8 +41,8 @@ p {
   content: attr(text);
   position: absolute;
   z-index: 10;
-  color: #f82a27;
-  -webkit-mask: linear-gradient(to left, #67a621, transparent);
+  color: #42a4d3;
+  -webkit-mask: linear-gradient(to left, #1c0370, transparent);
 }
 #header #content {
   padding: 0 1rem;
@@ -96,8 +96,15 @@ p {
 #center .afternoon > div:first-child {
   padding-top: 1rem;
 }
+#center p,
+#center h4 {
+  padding: 0 1rem;
+}
 #center #host {
   padding-bottom: 15rem;
+}
+#center #host h4 {
+  padding: 0;
 }
 #center #host #hostName,
 #center #host #hostTitle {
