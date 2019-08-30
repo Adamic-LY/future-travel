@@ -16,7 +16,6 @@ body {
   width: 100%;
 }
 body {
-  background: #555;
   background-image: url(image/bg.png);
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -43,6 +42,7 @@ body {
 #header #title {
   padding-top: 6.5rem;
   text-align: center;
+  width: 100%;
 }
 #header #title h2 {
   color: #406fc9;
@@ -55,14 +55,14 @@ body {
 #header #title #info {
   width: 15rem;
   height: 2rem;
-  margin-left: 5.4rem;
+  margin: 0 auto;
   margin-top: 1rem;
-  box-sizing: border-box;
 }
 #header #title #info div {
   height: 2rem;
   float: left;
   padding-right: 1.4rem;
+  text-align: center;
   border-right: 1px solid #000;
 }
 #header #title #info div span {
@@ -74,7 +74,7 @@ body {
   font-size: 0.8rem;
 }
 #header #title #info div:last-child {
-  margin-left: 1.4rem;
+  padding-left: 1.4rem;
   padding-right: 0;
   border-right: none;
 }
@@ -150,7 +150,7 @@ body {
   font-size: 0.7rem;
 }
 #footer #content div span:last-child {
-  font-weight: 10;
+  font-weight: 400;
 }
 #footer #content div:nth-child(2) {
   margin-left: 3rem;
@@ -172,17 +172,29 @@ body {
   html {
     font-size: 15px;
   }
+  body #info,
+  html #info {
+    margin-left: 6rem !important;
+  }
 }
 @media only screen and (min-width: 390px) {
   body,
   html {
     font-size: 15.6px;
   }
+  body #info,
+  html #info {
+    margin-left: 6rem !important;
+  }
 }
 @media only screen and (min-width: 414px) {
   body,
   html {
     font-size: 16.56px;
+  }
+  body #info,
+  html #info {
+    margin-left: 6rem !important;
   }
 }
 @media only screen and (min-width: 480px) {
@@ -195,6 +207,10 @@ body {
   body,
   html {
     font-size: 30px;
+  }
+  body #info,
+  html #info {
+    margin-left: 6.5rem !important;
   }
 }
 @media only screen and (min-width: 980px) {
