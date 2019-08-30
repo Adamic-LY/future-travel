@@ -64,6 +64,7 @@ p {
 }
 #center .tab {
   height: 2.7rem;
+  margin-bottom: 1rem;
 }
 #center .tab div {
   width: 11.5rem;
@@ -90,13 +91,12 @@ p {
   border-bottom: 1px solid #ccc;
   padding-bottom: 1rem;
 }
-#center .morning > div:first-child,
-#center .afternoon > div:first-child {
-  padding-top: 1rem;
-}
 #center p,
 #center h4 {
   padding: 0 1rem;
+}
+#center p {
+  text-align: justify !important;
 }
 #center #host {
   padding-bottom: 3rem;

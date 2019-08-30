@@ -19,28 +19,24 @@ body {
   background-image: url(image/bg.png);
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 25.6rem;
 }
 #header {
   width: 25rem;
-  height: 15rem;
-  position: relative;
+  height: 17rem;
 }
 #header #logo {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  width: 10.3rem;
+  margin: -3rem auto;
+  margin-bottom: 2rem;
+  width: 16rem;
+  height: 3rem;
 }
 #header #logo img {
   display: block;
-  width: 10rem;
+  width: 100%;
 }
 #header #title {
-  padding-top: 6.5rem;
+  padding-top: 2.5rem;
   text-align: center;
   width: 100%;
 }
@@ -60,8 +56,8 @@ body {
 }
 #header #title #info div {
   height: 2rem;
+  width: 50%;
   float: left;
-  padding-right: 1.4rem;
   text-align: center;
   border-right: 1px solid #000;
 }
@@ -74,8 +70,6 @@ body {
   font-size: 0.8rem;
 }
 #header #title #info div:last-child {
-  padding-left: 1.4rem;
-  padding-right: 0;
   border-right: none;
 }
 #center {
@@ -172,29 +166,17 @@ body {
   html {
     font-size: 15px;
   }
-  body #info,
-  html #info {
-    margin-left: 6rem !important;
-  }
 }
 @media only screen and (min-width: 390px) {
   body,
   html {
     font-size: 15.6px;
   }
-  body #info,
-  html #info {
-    margin-left: 6rem !important;
-  }
 }
 @media only screen and (min-width: 414px) {
   body,
   html {
     font-size: 16.56px;
-  }
-  body #info,
-  html #info {
-    margin-left: 6rem !important;
   }
 }
 @media only screen and (min-width: 480px) {
@@ -207,10 +189,6 @@ body {
   body,
   html {
     font-size: 30px;
-  }
-  body #info,
-  html #info {
-    margin-left: 6.5rem !important;
   }
 }
 @media only screen and (min-width: 980px) {
